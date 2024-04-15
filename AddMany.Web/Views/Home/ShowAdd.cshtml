@@ -1,0 +1,25 @@
+﻿
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <button class="btn btn-danger" id="add-row">Add Row</button>
+        <form style="margin-top: 10px;"  method="post" action="/home/Add">
+            <div id="ppl-rows">
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" name="p[0].FirstName" placeholder="First Name" />
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" name="p[0].LastName" placeholder="Last Name" />
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" name="p[0].Age" placeholder="Age" />
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/addrow.js"></script>
+};
